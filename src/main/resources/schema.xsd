@@ -1,0 +1,40 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://soapwebapp.com/soap-web-app"
+           targetNamespace="http://soapwebapp.com/soap-web-app" elementFormDefault="qualified">
+
+	<!-- Methods: -->
+    <xs:element name="getStateRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getStateResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="state" type="tns:state"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+	<!-- Models -->
+    <xs:complexType name="state">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="population" type="xs:int"/>
+            <xs:element name="capital" type="xs:string"/>
+            <xs:element name="region" type="tns:region"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="region">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="West"/>
+            <xs:enumeration value="Southwest"/>
+            <xs:enumeration value="Midwest"/>
+            <xs:enumeration value="Southeast"/>
+            <xs:enumeration value="Northeast"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
