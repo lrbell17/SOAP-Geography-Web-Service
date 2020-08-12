@@ -28,34 +28,18 @@ import javax.xml.bind.annotation.XmlRegistry;
 @XmlRegistry
 public class ObjectFactory {
 
-
-    /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.soapwebapp.soap_web_app
-     * 
-     */
     public ObjectFactory() {
     }
 
-    /**
-     * Create an instance of {@link GetStateRequest }
-     * 
-     */
+
     public GetStateRequest createGetStateRequest() {
         return new GetStateRequest();
     }
 
-    /**
-     * Create an instance of {@link GetStateResponse }
-     * 
-     */
     public GetStateResponse createGetStateResponse() {
         return new GetStateResponse();
     }
 
-    /**
-     * Create an instance of {@link State }
-     * 
-     */
     public State createState() {
         return new State();
     }

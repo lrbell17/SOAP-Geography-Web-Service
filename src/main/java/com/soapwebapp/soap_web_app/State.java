@@ -55,90 +55,48 @@ public class State {
     @XmlSchemaType(name = "string")
     protected Region region;
 
-    /**
-     * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
+    public State() {}
+    
+    public State(String name, String capital, int population, Region region) {
+    	this.name = name;
+    	this.capital = capital;
+    	this.population = population;
+    	this.region = region;
+    }
+    
     public String getName() {
         return name;
     }
 
-    /**
-     * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
+
     public void setName(String value) {
         this.name = value;
     }
 
-    /**
-     * Gets the value of the population property.
-     * 
-     */
+
     public int getPopulation() {
         return population;
     }
 
-    /**
-     * Sets the value of the population property.
-     * 
-     */
+
     public void setPopulation(int value) {
         this.population = value;
     }
 
-    /**
-     * Gets the value of the capital property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
     public String getCapital() {
         return capital;
     }
 
-    /**
-     * Sets the value of the capital property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
     public void setCapital(String value) {
         this.capital = value;
     }
 
-    /**
-     * Gets the value of the region property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Region }
-     *     
-     */
+ 
     public Region getRegion() {
         return region;
     }
 
-    /**
-     * Sets the value of the region property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Region }
-     *     
-     */
+
     public void setRegion(Region value) {
         this.region = value;
     }

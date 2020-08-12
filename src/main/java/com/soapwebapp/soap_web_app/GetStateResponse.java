@@ -44,26 +44,11 @@ public class GetStateResponse {
     @XmlElement(required = true)
     protected State state;
 
-    /**
-     * Gets the value of the state property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link State }
-     *     
-     */
+ 
     public State getState() {
         return state;
     }
 
-    /**
-     * Sets the value of the state property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link State }
-     *     
-     */
     public void setState(State value) {
         this.state = value;
     }
