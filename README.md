@@ -23,4 +23,4 @@ To send a request, I used Postman with the following configurations:
 Send the request, and you should get back an XML based response with the state's information. 
 Try entering different states in the "ss:name" field.
   
-Make sure to check out https://github.com/lrbell17/SOAP-Geography-Consumer for a java program that consumes this service without using Postman
+Make sure to check out https://github.com/lrbell17/SOAP-Geography-Consumer for a java program that consumes this service without using Postman, or https://github.com/lrbell17/SOAP-Geography-Consumer-Spring for a similar (and simpler) Spring Boot implementation.
